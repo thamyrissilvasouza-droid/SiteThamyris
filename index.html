@@ -1,99 +1,91 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Feminino</title>
-  
-  <link rel="stylesheet" href="style.css">
-
-  <script src="/_sdk/element_sdk.js"></script>
-  <style>@view-transition { navigation: auto; }</style>
-  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
-  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio Richard</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="floating-petals" id="petals-container"></div>
-  <div class="container">
-    <header class="header fade-in">
-      <div class="profile-image">
-    <img class="profile-image" src="euuu.jpeg" alt="Euzinha">
-</div>
+
+  <header>
+    <h2 class="logo">Rdzzin</h2>
+    <button class="toggle-btn" onclick="toggleDarkMode()">Dark Mode</button>
+  </header>
+
+  <!-- PARALLAX -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Olá, eu sou <span>Richard</span></h1>
+      <p>Desenvolvedor • Criador • Estudante de Tecnologia</p>
+      <a href="#sobre" class="btn">Sobre Mim</a>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="sobre-mim card fade-in">
+    <img src="https://picsum.photos/300" alt="Minha foto" />
+    <h2>Sobre Mim</h2>
+    <p>
+      Tenho paixão por tecnologia, programação e criação de projetos.  
+      Esse site foi feito para apresentar um pouco sobre quem eu sou e o que faço.
+    </p>
+  </section>
+
+  <!-- PROJETOS -->
+  <section class="card fade-in">
+    <h2>Projetos</h2>
+    <div class="projetos">
+      <div class="projeto-item slide-up">
+        <img src="https://picsum.photos/400/250" alt="Projeto 1">
+        <h3>Minha Turma</h3>
+        <p>pura resenha</p>
       </div>
-      <h1 class="main-title" id="main-name">Letícia Martins</h1>
-      <p class="subtitle" id="main-profession">Estudante e muito extrovertida</p>
-      <div class="decorative-line"></div>
-      <p class="description" id="main-description">Tenho 16 anos. Estou no 2 ano do ensino médio e faço curso de Desenvolvimento de Sistemas, amo meus amigos, adoro assistir série, ver filmes e ler livros principalmente de romance .</p>
-    </header>
 
-    <section class="section fade-in">
-      <h2 class="section-title">Sobre mim</h2>
-      <div class="services-grid">
-        <div class="service-card" onclick="animateService(this)"><span class="service-icon">🎨</span>
-          <h3 class="service-title">Meu curso </h3>
-          <p class="service-description">Lá eu aprendo coisas novas todos os dias, temos passeios e muita diversão.</p>
-        </div>
-        <div class="service-card" onclick="animateService(this)"><span class="service-icon">🌸</span>
-          <h3 class="service-title">um pouco sobre mim</h3>
-          <p class="service-description">eu amo cozinhar e dançar, e um sonho meu meio "irreal" é ser dançarina ou trabalhar nesse meio, e eu sou muito apaixonada por filmes de romance.</p>
-        </div>
-        <div class="service-card" onclick="animateService(this)"><span class="service-icon">💕</span>
-          <h3 class="service-title">Time feminino</h3>
-          <p class="service-description">Jogo nesse time a 2 anos, gosto muito de cada uma delas, são todas muito importantes para mim, se divertimos muito em cada jogo e mesmo perdendo sempre estamos sorrindo.</p>
-        </div>
+      <div class="projeto-item slide-up" style="animation-delay: .2s;">
+        <img src="https://picsum.photos/401/250" alt="Projeto 2">
+        <h3>Projeto 2</h3>
+        <p>Descrição=</p>
       </div>
-    </section>
 
-      <section class="section fade-in">
-  <h2 class="section-title">fotinhos </h2>
-  <div class="gallery-grid">
-    <div class="gallery-item" onclick="animateGallery(this)">
-      <img src="bus.png" alt="Lá no bus">
+      <div class="projeto-item slide-up" style="animation-delay: .4s;">
+        <img src="https://picsum.photos/402/250" alt="Projeto 3">
+        <h3>Projeto 3</h3>
+        <p>Descrição</p>
+      </div>
     </div>
-    
-    <div class="gallery-item" onclick="animateGallery(this)">
-      <img src="não grita.jpeg" alt="lelet">
-    </div>
+  </section>
 
-    <div class="gallery-item" onclick="animateGallery(this)">
-      <img src="duda stela.jpeg" alt="Duda e Stela">
-    </div>
-    
-    </div>
+<!-- CURRÍCULO -->
+<section class="card fade-in" id="curriculo">
+  <h2>Currículo</h2>
+
+  <div class="curriculo-box slide-up">
+    <ul>
+      <li>Nome: Richard Moraes Guetten Cesario</li>
+      <li>Idade: 16 Anos</li>
+      <li>Objetivo profissional: Carreira Concreta</li>
+      <li>Experiências: Projetos em feiras de ciencia</li>
+      <li>Contato: 41 99702-4504</li>
+    </ul>
+  </div>
 </section>
 
-    <section class="section contact-section fade-in">
-      <div class="contact-content">
-        <h2 class="contact-title">E aqui estão minhas redes sociais!</h2>
-        <p class="contact-subtitle">Estou sempre pronta para novos projetos encantadores</p>
-        <div class="contact-info">
-          <div class="contact-item" onclick="animateContact(this)"><span class="contact-icon">💌</span> <span id="display-vsco">https://vs.co/fpygsgm8/</span></div>
-          <div class="contact-item" onclick="animateContact(this)"><span class="contact-icon">📸</span> <span id="display-instagram">https://www.instagram.com/martiins.leh/</span></div>
-        
-    </section>
-  </div>
+<!-- REDES SOCIAIS -->
+<section class="card fade-in" id="redes">
+  <h2>Redes Sociais</h2>
 
-  <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'99dee5656100544c',t:'MTc2MzA0MzQ4Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
-  
+  <a href="https://www.instagram.com/riichardm___/" target="_blank" class="social-link slide-up">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+    <span>Instagram</span>
+  </a>
+</section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2025 — Feito por Richard (e o chat gpt)
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
-
-<a href="#" id="vsco-link" class="seu-estilo-de-botao">
-    [Ícone] https://vs.co/fpygsgm8/
-</a>
-
-<a href="#" id="instagram-link" class="seu-estilo-de-botao">
-    [Ícone] https://www.instagram.com/martiins.leh/
-</a>
-
-<body>
-    <script>
-        <section class="redes-sociais">
-    <a href="#" id="vsco-link">...</a> 
-    <a href="#" id="instagram-link">...</a>
-</section>
-    </script>
-</body>
-</html>
-
